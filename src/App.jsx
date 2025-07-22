@@ -38,26 +38,28 @@ function App() {
       <form onSubmit={handleSubmit} action="">
         <div className="form-wrapper">
           <label htmlFor="">Name:</label>
-          <input type="text" ref={name} />
+          <input id="nameInput" type="text" ref={name} />
         </div>
         <div className="form-wrapper">
           <label htmlFor="">Email:</label>
-          <input type="email" ref={email} />
+          <input id="emailInput" type="email" ref={email} />
         </div>
         <div className="form-wrapper">
           <label htmlFor="">Age:</label>
-          <input type="number" ref={age} />
+          <input id="ageInput" type="number" ref={age} />
         </div>
-        <button>Add User</button>
+        <button id="submitBtn">Add User</button>
       </form>
       <ul>
         {users.map((user) => {
           return (
-            <li key={user.id}>
+            <li key={user.id} className="content">
               <h3>{user.name}</h3>
               <p>{user.email}</p>
               <p>{user.age}</p>
-              <button onClick={() => handleDelete(user.id)}>Delete</button>
+              <button onClick={() => handleDelete(user.id)} id="delteBtn">
+                Delete
+              </button>
             </li>
           );
         })}

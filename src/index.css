@@ -1,7 +1,95 @@
+body {
+  overflow-x: hidden;
+}
+
 .form-wrapper label {
   display: block;
 }
 
 .form-wrapper {
   margin-bottom: 10px;
+  position: relative;
+  left: 45%;
+}
+
+#nameInput {
+  border-radius: 7px;
+  border: 1px solid #5390e6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+#nameInput:focus {
+  border: none;
+  background-color: #bed3f0;
+  outline: none;
+}
+
+#emailInput {
+  border-radius: 7px;
+  border: 1px solid #5390e6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+#emailInput:focus {
+  border: none;
+  background-color: #bed3f0;
+  outline: none;
+}
+
+#ageInput {
+  border-radius: 7px;
+  border: 1px solid #5390e6;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 10rem;
+  height: 1.5rem;
+}
+
+#ageInput:focus {
+  border: none;
+  background-color: #bed3f0;
+  outline: none;
+}
+
+.content {
+  position: relative;
+  left: 45%;
+}
+
+#submitBtn {
+  position: relative;
+  left: 45%;
+  border: 1px solid rgb(64, 64, 219);
+  width: 12.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+#submitBtn:hover {
+  background-color: rgb(64, 64, 219);
+  color: white;
+}
+
+#delteBtn {
+  position: relative;
+  right: 1rem;
+  border: 1px solid rgb(233, 6, 6);
+  width: 12.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+#delteBtn:hover {
+  background-color: rgb(233, 6, 6);
+  color: white;
 }
